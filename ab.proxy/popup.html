@@ -1,0 +1,36 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxy Extension</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div class="popup-container">
+    <h1>Proxy Extension Popup</h1>
+    
+    <label for="proxyServerInput">Proxy Server:</label>
+    <input type="text" id="proxyServerInput" placeholder="Enter proxy server">
+    
+    <label for="proxyPortInput">Proxy Port:</label>
+    <input type="text" id="proxyPortInput" placeholder="Enter proxy port">
+
+    <label for="proxyUserInput">Username:</label>
+    <input type="text" id="proxyUserInput" placeholder="Enter username">
+
+    <label for="proxyPassInput">Password:</label>
+    <input type="password" id="proxyPassInput" placeholder="Enter password">
+
+    <button onclick="startProxy()">Start Proxy</button>
+    <button onclick="stopProxy()">Stop Proxy</button>
+
+    <div id="proxyStatus">
+      <h2>Proxy Status</h2>
+      <p id="statusMessage">Not connected</p>
+    </div>
+  </div>
+</body>
+</html>
